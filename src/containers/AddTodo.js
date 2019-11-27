@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
+import { Form } from './AppTodoStyle';
 
 const AddTodo = ({ dispatch }) => {
   let input;
 
   return (
     <div>
-      <form
+      <Form
         onSubmit={e => {
           e.preventDefault();
           if (!input.value.trim()) {
@@ -19,7 +20,7 @@ const AddTodo = ({ dispatch }) => {
       >
         <input ref={node => (input = node)} />
         <button type="submit">Add Todo</button>
-      </form>
+      </Form>
     </div>
   );
 };
