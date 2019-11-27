@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 import { Form } from '../styles/AppTodoStyle';
 import { Button } from '../styles/ButtonStyle';
+import { Input } from '../styles/InputStyle';
 
 const AddTodo = ({ dispatch }) => {
   let input;
@@ -19,7 +20,7 @@ const AddTodo = ({ dispatch }) => {
           input.value = '';
         }}
       >
-        <input ref={node => (input = node)} />
+        <Input ref={node => (input = node)} />
         <Button type="submit">Add</Button>
       </Form>
     </div>
