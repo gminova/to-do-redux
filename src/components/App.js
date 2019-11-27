@@ -2,13 +2,14 @@ import React from 'react';
 import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
 import VisibleTodoList from '../containers/VisibleTodoList';
+import { Div } from './AppStyle';
 
 const App = () => (
-  <div>
+  <Div>
     <AddTodo />
     <VisibleTodoList />
     <Footer />
-  </div>
+  </Div>
 );
 
 export default App;
